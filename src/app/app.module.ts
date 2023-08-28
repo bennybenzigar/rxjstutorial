@@ -7,7 +7,8 @@ import { RxjsComponent } from './of/rxjs.component';
 import { FromoperatorComponent } from './fromoperator/fromoperator.component';
 import { FromEventComponent } from './from-event/from-event.component';
 import { IntervalComponent } from './interval/interval.component';
-import { DebouncetimeComponent } from './debouncetime/debouncetime.component';
+import { DebouncetimeComponent } from './debouncetime,take,takeWhile,takeLast/debouncetime.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { DebouncetimeComponent } from './debouncetime/debouncetime.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
